@@ -1,0 +1,30 @@
+<?php//переменные$user = 'client';
+ //имя пользователя$pass = 'client';
+ //пароль$random1 = 'neehoyfantrakikitinoleileimootikananana'; 
+//слово случайное, т.к. генери-руем пароль md5$random2 = 'vennistdaasnurnstuckgitunslotermyeryabierhunddaasoderdieflipperwaldgershput';
+ //слово случайное$hash = md5($random1.$pass.$random2);$self = $_SERVER['REQUEST_URI'];
+if (isset($_POST['submit']) || isset($_COOKIE['login'])) 
+{
+if (isset($_COOKIE['login'])) 
+{
+if ($_COOKIE['login'] == $hash) 
+{ //infoecho "<p align=center><font size=4>Цены клиента
+</font>
+</p><p align=left><a href=logout.php>Logout</a><BR><BR></p>";include 'client1.html';
+//здесь вставляем прайс-лист} else {echo "Bad cookie. Удалить куки или попробуйте еще раз.";
+}} 
+else {if ($_POST['user'] == $user && $_POST['pass'] == $pass){setcookie("login", $hash);header("Location: $_SERVER[PHP_SELF]");}
+ else {echo "Ошибка! Имя пользователя или пароль ошибочны!";}}}else {echo "<form action=\"\" method=post>\n";
+ echo " <strong>Вход клиента</strong>\n"; echo " <fieldset>\n"; echo "<table width=\"197\" border=\"0\">\n";
+ echo " <tr>\n"; echo " <td width=\"43\"><strong>User:</strong></td>\n"; echo " <td width=\"144\">
+<input type=text name=user></td>\n"; echo " </tr>\n"; echo " <tr>\n"; echo " <td><strong>Пароль:
+</strong></td>\n"; 
+echo " <td><input type=password name=pass></td>\n"; 
+echo " </tr>\n"; 
+echo "</table>\n";
+ echo " <input type=submit name=submit value=submit>\n";
+ echo "</fieldset></form>\n";
+}]
+?>
+
+

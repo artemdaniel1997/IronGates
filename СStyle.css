@@ -1,0 +1,38 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+.html {
+    width: 1000px;
+    height: 800px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+   
+}
+.body table {
+    width: 1000px;
+    height: 800px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  
+}
+p1 {
+    color: #FFF;
+}
+p2 {
+    color: #FFF;
+}
+p3 {
+    color: #FFF;
+}
+a {
+    color: #FFF;
+}
+.td {
+    width: 100%;
+     height: 60px;
+      border: 1;
+   
+}

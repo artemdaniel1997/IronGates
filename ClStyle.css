@@ -1,0 +1,40 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+.html {
+    width: 1000px;
+    height: 800px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #ffff00;
+}
+.body table {
+    width: 1000px;
+    height: 800px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #33CC33;
+}
+a {
+    color: #FFF;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #FDDF95;
+}
+
+colgroup {
+    width: 250px;
+}
+
